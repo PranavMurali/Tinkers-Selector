@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Results from '../components/Results'
+import Search from '../components/Search';
 
 export default function Home() {
   return (
@@ -11,11 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <Results/>
+      <Search/>
     </div>
   )
-}
-
-export async function getServerSideProps(context) {
-  const search = context.query.search;
 }
