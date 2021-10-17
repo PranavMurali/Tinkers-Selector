@@ -1,8 +1,10 @@
 import { useState } from "react"
 import Head from 'next/head'
 import Weapon from '../components/Weapon'
+import { useCount } from '../context/Tool'
 export default function Home() {
   const [query, setQuery] = useState('')
+  const count = useCount()
   return (
     <div>
       <Head>
@@ -19,6 +21,7 @@ export default function Home() {
       </div>
       
       <Weapon query={query}/>
+      {console.log(count)}
     </div>
   )
 }

@@ -1,10 +1,20 @@
 import FuzzySearch from 'fuzzy-search';
 import { useState } from 'react';
+import { useCount, useDispatchCount } from '../context/Tool'
 
 let Weapons=require('../data/Tinkers-tools.json');
 
 const Weapon = ({query}) => {
     const [tool, setTool] = useState(null);
+    const count = useCount()
+    const dispatch = useDispatchCount()
+
+    const handleIncrease = (event,tool) =>
+    dispatch({
+      type: 'SET_TOOL',
+      tool: tool
+    })
+
     const searcher = new FuzzySearch(Weapons, ['Tool'], {
         caseSensitive: false,
         sort: true,
@@ -14,6 +24,9 @@ const Weapon = ({query}) => {
     function click(event, someParameter){
         event.preventDefault();
         setTool(someParameter);
+        handleIncrease(event,someParameter);
+        console.log(tool)
+        console.log(count.tool)
     }
 
     return (

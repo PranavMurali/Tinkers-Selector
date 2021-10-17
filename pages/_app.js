@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import '../styles/globals.css'
 import Head from 'next/head'
+import { CounterProvider } from '../context/Tool'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,7 +12,11 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
     </Head>
     <Header/>
+
+    <CounterProvider>
     <Component {...pageProps} />
+    </CounterProvider>
+    
     </>
   )
 }
