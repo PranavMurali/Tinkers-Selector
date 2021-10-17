@@ -1,7 +1,7 @@
 [
-    {"Material":"Electrical Steel","Durability":"80","Modifier":"0.75","Traits":"Lightweight"},
-    {"Material":"Energetic Alloy","Durability":"-800","Modifier":"2","Traits":"Holy"},
-    {"Material":"Vibrant Alloy","Durability":"-50","Modifier":"0.5","Traits":"Direct"},
+    {"Material":"Electrical Steel","Durability":80,"Modifier":0.75,"Traits":"Lightweight"},
+    {"Material":"Energetic Alloy","Durability":-800,"Modifier":2,"Traits":"Holy"},
+    {"Material":"Vibrant Alloy","Durability":-50,"Modifier":0.5,"Traits":"Direct"},
     {"Material":"Redstone Alloy","Durability":"-5","Modifier":"1","Traits":"Writeable"},
     {"Material":"Conductive Iron","Durability":"100","Modifier":"1.25","Traits":"Lightweight"},
     {"Material":"Pulsating Iron","Durability":"250","Modifier":"1.05","Traits":"Vanishing"},

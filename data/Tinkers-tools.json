@@ -1,0 +1,14 @@
+[
+    {"Tool":"Broadword","Modifier":2,"Handle":1,"Extras":1,"Head":1},
+    {"Tool":"LongSword","Modifier":2,"Handle":1,"Extras":"Hand Guard","Head":1},
+    {"Tool":"Rapier","Modifier":0.5,"Handle":1,"Extras":1,"Head":1},
+    {"Tool":"Dagger","Modifier":0.5,"Handle":1,"Extras":1,"Head":1},
+    {"Tool":"Battlesign","Modifier":0.5,"Handle":1,"Head":1},
+    {"Tool":"Frying pan","Modifier":0,"Handle":1,"Head":1},
+    {"Tool":"Cutlass","Modifier":2,"Handle":1,"Extras":1,"Head":1},
+    {"Tool":"Hammer","Modifier":1.5,"Handle":1,"Extras":2,"Head":1},
+    {"Tool":"Scythe","Modifier":1.5,"Handle":2,"Extras":1,"Head":1},
+    {"Tool":"Battle Axe","Modifier":2,"Handle":1,"Extras":1,"Head":2},
+    {"Tool":"Cleaver","Modifier":4,"Handle":2,"Extras":1,"Head":1}
+
+]
