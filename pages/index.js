@@ -2,6 +2,7 @@ import { useState } from "react"
 import Head from 'next/head'
 import Weapon from '../components/Weapon'
 import { useCount } from '../context/Tool'
+
 export default function Home() {
   const [query, setQuery] = useState('')
   const count = useCount()
@@ -19,7 +20,6 @@ export default function Home() {
                   <button type="submit" className="bg-gray-700 w-20 h-10 m-5" onClick={(e) => {reset(e);}}>Reset</button>
         </form>
       </div>
-      
       <Weapon query={query}/>
       {console.log(count)}
     </div>

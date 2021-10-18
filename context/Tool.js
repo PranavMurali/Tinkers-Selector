@@ -9,7 +9,12 @@ const reducer = (state, action) => {
     return {
         ...state,
         tool: action.tool,
-        parts: action.parts,
+        head: action.head,
+        headnos: action.headnos,
+        handle: action.handle,
+        handlenos: action.handlenos,
+        extras: action.extras,
+        extranos: action.extranos,
     }
     default:
       throw new Error(`Unknown action: ${action.type}`)
@@ -18,7 +23,12 @@ const reducer = (state, action) => {
 
 const initialState = {
   tool: '',
-  parts: [],
+  head:[] ,
+  headnos: 0,
+  handle: [],
+  handlenos: 0,
+  extras: [],
+  extranos: 0,
 }
 
 export const CounterProvider = ({ children }) => {

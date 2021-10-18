@@ -1,5 +1,6 @@
 import FuzzySearch from 'fuzzy-search';
-
+import { useState } from 'react';
+import { useCount, useDispatchCount } from '../context/Tool'
 
 let Extras=require('../data/Tinkers-Extras.json');
 let Handles=require('../data/Tinkers-Handles.json');
@@ -7,6 +8,13 @@ let Heads=require('../data/Tinkers-Head.json');
 let Traits=require('../data/Tinkers-Traits.json');
 
 function Results({category,query}) {
+    const [head, setHead] = useState([]);
+    const [handle, setHandle] = useState([]);
+    const [extras, setExtras] = useState([]);
+
+    const count = useCount()
+    const dispatch = useDispatchCount()
+
     const extra_searcher = new FuzzySearch(Extras, ['Material', 'Traits'], {
         caseSensitive: false,
         sort: true,
@@ -24,6 +32,15 @@ function Results({category,query}) {
 
     const Extra = ({query}) => {
         let res =extra_searcher.search(query);
+
+        function click(event, someParameter){
+            event.preventDefault();
+            setExtras(someParameter);
+            handleIncrease(event,someParameter);
+            console.log(tool)
+            console.log(count.tool)
+        }
+
         return(
             <>
             <div className="space-y-6">
@@ -40,14 +57,23 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
+            <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" >add</button>
             </div>):<h2></h2>}
             </div>
+            {console.log(count.headnos)}
             </>
         )
     }
 
     const Head = ({query}) => {
         let res =head_searcher.search(query);
+        function click(event, someParameter){
+            event.preventDefault();
+            setHead(someParameter);
+            handleIncrease(event,someParameter);
+            console.log(tool)
+            console.log(count.tool)
+        }
         return(
             <>
             <div className="space-y-6">
@@ -80,9 +106,8 @@ function Results({category,query}) {
             <p className="text-gray-300 text-base">Damage</p>
                 <p className="text-yellow-300 text-sm"> {results.Damage}</p>
             </div>
-
-
             </div>
+            <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button>
             </div>):<h2></h2>}
             </div>
             </>
@@ -91,6 +116,14 @@ function Results({category,query}) {
 
     const Handle = ({query}) => {
         let res =handle_searcher.search(query);
+        function click(event, someParameter){
+            event.preventDefault();
+            setHandle(someParameter);
+            handleIncrease(event,someParameter);
+            console.log(tool)
+            console.log(count.tool)
+        }
+
         return(
             <>
             <div className="space-y-6">
@@ -111,6 +144,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
+            <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button>
             </div>):<h2></h2>}
             </div>
             </>

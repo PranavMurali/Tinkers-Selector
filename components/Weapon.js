@@ -9,10 +9,13 @@ const Weapon = ({query}) => {
     const count = useCount()
     const dispatch = useDispatchCount()
 
-    const handleIncrease = (event,tool) =>
+    const handleIncrease = (event,tool,headl,handlel,extral) =>
     dispatch({
       type: 'SET_TOOL',
-      tool: tool
+      tool: tool,
+      headnos:headl,
+      handlenos:handlel,
+      extranos:extral
     })
 
     const searcher = new FuzzySearch(Weapons, ['Tool'], {
@@ -21,10 +24,10 @@ const Weapon = ({query}) => {
       });
 
     let res = searcher.search(query);
-    function click(event, someParameter){
+    function click(event, tool, headl, handlel, extral) {
         event.preventDefault();
-        setTool(someParameter);
-        handleIncrease(event,someParameter);
+        setTool(tool);
+        handleIncrease(event,tool,headl,handlel,extral);
         console.log(tool)
         console.log(count.tool)
     }
@@ -48,7 +51,7 @@ const Weapon = ({query}) => {
         <p className="text-gray-300 text-base">Extra</p>
             <p className="text-yellow-300 text-sm"> {results.Extras}</p>
         </div>
-        <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Tool);}}>add</button>
+        <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Tool,results.Head,results.Handle,results.Extras);}}>add</button>
 
         </div>
         </div>):<h2></h2>}

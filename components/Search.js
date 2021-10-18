@@ -1,9 +1,11 @@
 import { useState } from "react"
 import Results from "./Results"
+import { useCount } from '../context/Tool'
 
 function Search() {
     const [query, setQuery] = useState('');
     const [category, setCategory] = useState('');
+    const count = useCount()
     function click(event, someParameter){
         event.preventDefault();
         setCategory(someParameter);
@@ -28,6 +30,7 @@ function Search() {
             <div className="flex sm:flex-row m-10 justify-between items-center h-auto">
                 <Results category = {category} query={query}/>
             </div>
+            {console.log(count)}
         </div>
     )
 }
