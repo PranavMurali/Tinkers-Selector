@@ -14,7 +14,7 @@ function Results({category,query}) {
 
     const count = useCount()
     const dispatch = useDispatchCount()
-
+    const extra =count.extra
     const extra_searcher = new FuzzySearch(Extras, ['Material', 'Traits'], {
         caseSensitive: false,
         sort: true,
@@ -33,11 +33,16 @@ function Results({category,query}) {
     const Extra = ({query}) => {
         let res =extra_searcher.search(query);
 
+        const handleIncrease = (event,tool) =>
+            dispatch({
+            type: 'SET_EXTRA',
+            extra:[tool]
+        })
         function click(event, someParameter){
             event.preventDefault();
+            console.log(count);
             setExtras(someParameter);
             handleIncrease(event,someParameter);
-            console.log(tool)
             console.log(count.tool)
         }
 
@@ -57,21 +62,25 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
-            <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" >add</button>
+            <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button>
             </div>):<h2></h2>}
             </div>
-            {console.log(count.headnos)}
             </>
         )
     }
 
     const Head = ({query}) => {
         let res =head_searcher.search(query);
+        const handleIncrease = (event,tool) =>
+        dispatch({
+        type: 'SET_HEAD',
+        head:[tool]
+        })
         function click(event, someParameter){
             event.preventDefault();
-            setHead(someParameter);
+            console.log(count);
+            setExtras(someParameter);
             handleIncrease(event,someParameter);
-            console.log(tool)
             console.log(count.tool)
         }
         return(
@@ -116,11 +125,16 @@ function Results({category,query}) {
 
     const Handle = ({query}) => {
         let res =handle_searcher.search(query);
+        const handleIncrease = (event,tool) =>
+            dispatch({
+            type: 'SET_HANDLE',
+            handle:[tool]
+        })
         function click(event, someParameter){
             event.preventDefault();
-            setHandle(someParameter);
+            console.log(count);
+            setExtras(someParameter);
             handleIncrease(event,someParameter);
-            console.log(tool)
             console.log(count.tool)
         }
 

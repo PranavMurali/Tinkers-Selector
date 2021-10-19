@@ -9,12 +9,24 @@ const reducer = (state, action) => {
     return {
         ...state,
         tool: action.tool,
-        head: action.head,
         headnos: action.headnos,
-        handle: action.handle,
         handlenos: action.handlenos,
-        extras: action.extras,
         extranos: action.extranos,
+    }
+    case 'SET_EXTRA':
+    return {
+        ...state,
+        extra:action.extra,
+    }
+    case 'SET_HEAD':
+    return {
+        ...state,
+        head:action.head,
+    }
+    case 'SET_HANDLE':
+    return {
+        ...state,
+        handle:action.handle,
     }
     default:
       throw new Error(`Unknown action: ${action.type}`)
@@ -27,7 +39,7 @@ const initialState = {
   headnos: 0,
   handle: [],
   handlenos: 0,
-  extras: [],
+  extra: [],
   extranos: 0,
 }
 
