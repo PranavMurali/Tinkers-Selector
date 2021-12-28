@@ -41,6 +41,7 @@ const initialState = {
   handlenos: 0,
   extra: [],
   extranos: 0,
+  damage: 0,
 }
 
 export const CounterProvider = ({ children }) => {
