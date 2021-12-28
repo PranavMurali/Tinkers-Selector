@@ -21,9 +21,9 @@ function Search() {
                 <div class="text-gray-200">Working on {count.tool}</div>
                 <div class="space-y-3">
                 <div class="gap-4">
-                <div class="text-gray-200">Need {count.headnos} head piece</div>
-                <div class="text-gray-200">Need {count.extranos} extra piece</div>
-                <div class="text-gray-200">Need {count.handlenos} handle piece</div>
+                <div class="text-gray-200">Need {count.headnos - count.head.length} head piece</div>
+                <div class="text-gray-200">Need {count.extranos- count.extra.length} extra piece</div>
+                <div class="text-gray-200">Need {count.handlenos- count.handle.length} handle piece</div>
                 </div>
                 <div class="h-2 bg-gray-700 rounded"></div>
                 </div>
@@ -51,4 +51,4 @@ function Search() {
     )
 }
 
-export default Search
+export default Search;

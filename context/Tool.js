@@ -16,17 +16,17 @@ const reducer = (state, action) => {
     case 'SET_EXTRA':
     return {
         ...state,
-        extra:action.extra,
+        extra:[...state.extra,action.extra],
     }
     case 'SET_HEAD':
     return {
         ...state,
-        head:action.head,
+        head:[...state.head,action.head],
     }
     case 'SET_HANDLE':
     return {
         ...state,
-        handle:action.handle,
+        handle:[...state.handle,action.handle],
     }
     default:
       throw new Error(`Unknown action: ${action.type}`)

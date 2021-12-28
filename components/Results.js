@@ -34,8 +34,12 @@ function Results({category,query}) {
         function click(event, someParameter){
             event.preventDefault();
             handleIncrease(event,someParameter);
+            if (count.extra - count.extranos == 0) {
+                this.disabled = true;
+            } else {
+                this.disabled = false;
+            }
         }
-        
         return(
             <>
             <div className="space-y-6">
