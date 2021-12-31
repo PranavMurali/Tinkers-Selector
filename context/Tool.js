@@ -28,6 +28,19 @@ const reducer = (state, action) => {
         ...state,
         handle:[...state.handle,action.handle],
     }
+    case 'RESET_TOOL':
+    return {
+        ...state,
+        wps: [...state.wps,action.w1],
+        tool: '',
+        head:[] ,
+        headnos: 0,
+        handle: [],
+        handlenos: 0,
+        extra: [],
+        extranos: 0,
+        damage: 0,
+    }
     default:
       throw new Error(`Unknown action: ${action.type}`)
   }
@@ -42,6 +55,7 @@ const initialState = {
   extra: [],
   extranos: 0,
   damage: 0,
+  wps:[],
 }
 
 export const CounterProvider = ({ children }) => {

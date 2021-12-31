@@ -21,7 +21,6 @@ export default function Home() {
         </form>
       </div>
       <Weapon query={query}/>
-      {console.log(count)}
     </div>
   )
 }
