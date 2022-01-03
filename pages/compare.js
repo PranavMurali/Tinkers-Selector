@@ -43,7 +43,6 @@ export default function Home() {
         <div>
         <p className="text-gray-300 text-base">Extra</p>
             <p className="text-yellow-300 text-sm"> {results[0].extra}</p>
-            <p className="text-yellow-300 text-sm"> {count.wps.indexOf(results)}</p>
         </div>
         </div>
         </div>
