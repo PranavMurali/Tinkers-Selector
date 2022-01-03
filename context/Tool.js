@@ -9,9 +9,7 @@ const reducer = (state, action) => {
     return {
         ...state,
         tool: action.tool,
-        headnos: action.headnos,
-        handlenos: action.handlenos,
-        extranos: action.extranos,
+        parts: action.parts,
     }
     case 'SET_EXTRA':
     return {
@@ -48,13 +46,7 @@ const reducer = (state, action) => {
 
 const initialState = {
   tool: '',
-  head:[] ,
-  headnos: 0,
-  handle: [],
-  handlenos: 0,
-  extra: [],
-  extranos: 0,
-  damage: 0,
+  parts:[] ,
   wps:[],
 }
 
