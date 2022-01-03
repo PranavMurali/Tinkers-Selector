@@ -1,5 +1,5 @@
 import { useCount, useDispatchCount} from '../context/Tool'
-import {BanIcon, ColorSwatchIcon} from '@heroicons/react/outline'
+import {ColorSwatchIcon, DownloadIcon} from '@heroicons/react/outline'
 import HeaderItem from '../components/HeaderItem'
 
 export default function Home() {
@@ -12,18 +12,22 @@ export default function Home() {
     "extra":count.extra,
     "dmg":count.damage,
   }
+
   const handleSave = () =>
   dispatch({
   type: 'RESET_TOOL',
   w1: [wp],
   })
+
   function click(event){
     event.preventDefault();
+    console.log("dons");
     handleSave(event);
+    console.log(count);
   }
   return (
     <div className="space-y-6 flex flex-row">
-      {count.wps.length >1 && count.wps[0]? count.wps.map(results => 
+      {count.wps.length >=1 ? count.wps.map(results => 
        <>
         <div className="flex flex-row">
         <div className="bg-purple-600 rounded shadow border border-black p-6 w-64">
@@ -39,6 +43,7 @@ export default function Home() {
         <div>
         <p className="text-gray-300 text-base">Extra</p>
             <p className="text-yellow-300 text-sm"> {results[0].extra}</p>
+            <p className="text-yellow-300 text-sm"> {count.wps.indexOf(results)}</p>
         </div>
         </div>
         </div>
