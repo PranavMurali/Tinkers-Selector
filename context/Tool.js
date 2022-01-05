@@ -40,7 +40,6 @@ const reducer = (state, action) => {
         handlenos: 0,
         extra: [],
         extranos: 0,
-        damage: 0,
         parts: [],
     }
     default:
@@ -58,6 +57,8 @@ const initialState = {
   headnos:0,
   handlenos:0,
   parts:[],
+  dmg:0,
+  dura:0,
 }
 
 export const CounterProvider = ({ children }) => {

@@ -1,0 +1,13 @@
+Durability === max(1,round((head_dura+extra_dura)*handle_modifier,0)+handle_dura)
+
+mining_speed === sum(head_mine_speed)
+
+base_attack === sum(head_attack)
+
+mining_level === max(head_mine_lvl)
+
+
+
+tool_attack_after_modifer === ((base_attack/nos_head)*(weapon_dmg_modifier))+wpn_damage_mod+wpn_bonus_dmg
+
+dps === (wpn_attack_speed * tool_attack_after_modifer)
