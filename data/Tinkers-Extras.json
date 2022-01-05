@@ -1,52 +1,349 @@
 [
-    {"Material":"Electrical Steel","Durability":75,"Traits":"Lightweight"},
-    {"Material":"Energetic Alloy","Durability":400,"Traits":"Petramor"},
-    {"Material":"Vibrant Alloy","Durability":60,"Traits":"Direct"},
-    {"Material":"Redstone Alloy","Durability":150,"Traits":"Crude"},
-    {"Material":"Conductive Iron","Durability":250,"Traits":"Lightweight"},
-    {"Material":"Pulsating Iron","Durability":250,"Traits":"Vanishing"},        
-    {"Material":"Dark Steel","Durability":250,"Traits":"Dense"},
-    {"Material":"Soularium","Durability":1250,"Traits":"Splinters"},
-    {"Material":"End Steel","Durability":150,"Traits":"Unnatural"},
-    {"Material":"Iron Alloy","Durability":10,"Traits":"Cheapskate"},
-    {"Material":"Steeleaf","Durability":90,"Traits":"Synergy"},
-    {"Material":"Fiery Ingot","Durability":200,"Traits":"Flammable"},
-    {"Material":"Knightmetal Ingot","Durability":400,"Traits":"Stalwart"},
-    {"Material":"Wood","Durability":15,"Traits":"Ecological"},
-    {"Material":"Stone","Durability":20,"Traits":"Cheap"},
-    {"Material":"Flint","Durability":40,"Traits":"Crude"},
-    {"Material":"Cactus","Durability":50,"Traits":"Spiky"},
-    {"Material":"Bone","Durability":65,"Traits":"Fractured"},
-    {"Material":"Obsidian","Durability":90,"Traits":"Duritae"},
-    {"Material":"Prismarine","Durability":100,"Traits":"Aquadynamic"},
-    {"Material":"End Stone","Durability":42,"Traits":"Enderference"},
-    {"Material":"Paper","Durability":15,"Traits":"Writeable"},
-    {"Material":"Sponge","Durability":250,"Traits":"Squeaky"},
-    {"Material":"Firewood","Durability":150,"Traits":"Autosmelt"},
-    {"Material":"Iron","Durability":50,"Traits":"Magnetic"},
-    {"Material":"Pig Iron","Durability":170,"Traits":"Tasty"},
-    {"Material":"Knightslime","Durability":125,"Traits":"Unnatural"},
-    {"Material":"Slime","Durability":350,"Traits":"Slimey"},
-    {"Material":"Blue Slime","Durability":200,"Traits":"Slimey"},
-    {"Material":"Magma Slime","Durability":150,"Traits":"Flammable"},
-    {"Material":"Netherrack","Durability":75,"Traits":"Hellish"},
-    {"Material":"Cobalt","Durability":300,"Traits":"Lightweight"},
-    {"Material":"Ardite","Durability":450,"Traits":"Petramor"},
-    {"Material":"Manyullyn","Durability":50,"Traits":"Cold-Blooded"},
-    {"Material":"Copper","Durability":100,"Traits":"Well-Established"},
-    {"Material":"Bronze","Durability":80,"Traits":"Dense"},
-    {"Material":"Lead","Durability":100,"Traits":"Heavy"},
-    {"Material":"Silver","Durability":150,"Traits":"Holy"},
-    {"Material":"Electrum","Durability":250,"Traits":"Shocking"},
-    {"Material":"Steel","Durability":25,"Traits":"Stiff"},
-    {"Material":"Treated Wood","Durability":20,"Traits":"Ecological"},
-    {"Material":"Constantan","Durability":60,"Traits":"Thermal Inversion"},
-    {"Material":"Magical Wood","Durability":15,"Traits":"Magically Brittle"},
-    {"Material":"Evil Infused Iron","Durability":66,"Traits":"None"},
-    {"Material":"Enchanted Metal","Durability":80,"Traits":"Experience Boost"},
-    {"Material":"Demonic Metal","Durability":20,"Traits":"None"},
-    {"Material":"Plastic","Durability":150,"Traits":"Stonebound"},
-    {"Material":"Pink Slime","Durability":200,"Traits":"Slimey"},
-    {"Material":"Reinforced Pink Slime","Durability":270,"Traits":"Unnatural"},
-    {"Material":"Corrupted","Durability":50,"Traits":"None"}
-    ]
+    {
+      "Material": "Ardite",
+      "Durability": "450",
+      "Traits": "Petramor"
+    },
+    {
+      "Material": "BlueSlime",
+      "Durability": "200",
+      "Traits": "Slimey"
+    },
+    {
+      "Material": "Bone",
+      "Durability": "65",
+      "Traits": "Fractured"
+    },
+    {
+      "Material": "Bronze",
+      "Durability": "80",
+      "Traits": "Dense"
+    },
+    {
+      "Material": "Cactus",
+      "Durability": "50",
+      "Traits": "Spiky"
+    },
+    {
+      "Material": "Cobalt",
+      "Durability": "300",
+      "Traits": "Lightweight"
+    },
+    {
+      "Material": "Constantan",
+      "Durability": "60",
+      "Traits": "Thermal Inversion"
+    },
+    {
+      "Material": "Copper",
+      "Durability": "100",
+      "Traits": "Well-Established"
+    },
+    {
+      "Material": "Electrum",
+      "Durability": "250",
+      "Traits": "Shocking"
+    },
+    {
+      "Material": "EndStone",
+      "Durability": "42",
+      "Traits": "Enderference"
+    },
+    {
+      "Material": "Firewood",
+      "Durability": "150",
+      "Traits": "Autosmelt"
+    },
+    {
+      "Material": "Flint",
+      "Durability": "40",
+      "Traits": "Crude"
+    },
+    {
+      "Material": "Iron",
+      "Durability": "50",
+      "Traits": "Magnetic"
+    },
+    {
+      "Material": "KnightSlime",
+      "Durability": "125",
+      "Traits": "Unnatural"
+    },
+    {
+      "Material": "Lava Crystal",
+      "Durability": "100",
+      "Traits": "Flammable"
+    },
+    {
+      "Material": "Lead",
+      "Durability": "100",
+      "Traits": "Poisonous"
+    },
+    {
+      "Material": "MagmaSlime",
+      "Durability": "150",
+      "Traits": "Flammable"
+    },
+    {
+      "Material": "Manyullyn",
+      "Durability": "50",
+      "Traits": "Cold-Blooded"
+    },
+    {
+      "Material": "Netherrack",
+      "Durability": "75",
+      "Traits": "Hellish"
+    },
+    {
+      "Material": "Obsidian",
+      "Durability": "90",
+      "Traits": "Duritae"
+    },
+    {
+      "Material": "Paper",
+      "Durability": "15",
+      "Traits": "Writeable"
+    },
+    {
+      "Material": "Pig Iron",
+      "Durability": "170",
+      "Traits": "Tasty"
+    },
+    {
+      "Material": "Prismarine",
+      "Durability": "100",
+      "Traits": "Aquadynamic"
+    },
+    {
+      "Material": "Silver",
+      "Durability": "150",
+      "Traits": "Holy"
+    },
+    {
+      "Material": "Slime",
+      "Durability": "350",
+      "Traits": "Slimey"
+    },
+    {
+      "Material": "Sponge",
+      "Durability": "250",
+      "Traits": "Squeaky"
+    },
+    {
+      "Material": "Steel",
+      "Durability": "25",
+      "Traits": "Stiff"
+    },
+    {
+      "Material": "Stone",
+      "Durability": "20",
+      "Traits": "Cheap"
+    },
+    {
+      "Material": "Treated Wood",
+      "Durability": "20",
+      "Traits": "Ecological"
+    },
+    {
+      "Material": "Wood",
+      "Durability": "15",
+      "Traits": "Ecological"
+    },
+    {
+      "Material": "Mythril",
+      "Durability": "60",
+      "Traits": "Modifiable"
+    },
+    {
+      "Material": "Adamantium",
+      "Durability": "80",
+      "Traits": "Lightweight"
+    },
+    {
+      "Material": "Onyx",
+      "Durability": "110",
+      "Traits": "Aridiculous"
+    },
+    {
+      "Material": "Tiberium",
+      "Durability": "50",
+      "Traits": "Unstable"
+    },
+    {
+      "Material": "Rubium",
+      "Durability": "250",
+      "Traits": "Blind"
+    },
+    {
+      "Material": "Prometheum",
+      "Durability": "150",
+      "Traits": "Blind"
+    },
+    {
+      "Material": "Arcanite",
+      "Durability": "150"
+    },
+    {
+      "Material": "Titanite",
+      "Durability": "150"
+    },
+    {
+      "Material": "Meteorite",
+      "Durability": "200"
+    },
+    {
+      "Material": "Vibranium",
+      "Durability": "150",
+      "Traits": "Resonance"
+    },
+    {
+      "Material": "Adamantite",
+      "Durability": "300"
+    },
+    {
+      "Material": "Eternite",
+      "Durability": "150",
+      "Traits": "Writeable"
+    },
+    {
+      "Material": "Mythril (TAIGA)",
+      "Durability": "200"
+    },
+    {
+      "Material": "Palladium",
+      "Durability": "100",
+      "Traits": "Dark"
+    },
+    {
+      "Material": "Ignitite",
+      "Durability": "150"
+    },
+    {
+      "Material": "Bismuth",
+      "Durability": "117"
+    },
+    {
+      "Material": "Violium",
+      "Durability": "150"
+    },
+    {
+      "Material": "Mindorite",
+      "Durability": "100",
+      "Traits": "Cheap"
+    },
+    {
+      "Material": "Karmesine",
+      "Durability": "200"
+    },
+    {
+      "Material": "Nitronite",
+      "Durability": "93",
+      "Traits": "Uncertain"
+    },
+    {
+      "Material": "Bysmuid",
+      "Durability": "197"
+    },
+    {
+      "Material": "Ultranite",
+      "Durability": "210",
+      "Traits": "Pulverizing"
+    },
+    {
+      "Material": "Astrium",
+      "Durability": "170",
+      "Traits": "Curvature"
+    },
+    {
+      "Material": "Imperomite",
+      "Durability": "125",
+      "Traits": "Cascade"
+    },
+    {
+      "Material": "Dyonite",
+      "Durability": "140"
+    },
+    {
+      "Material": "Solarium",
+      "Durability": "150",
+      "Traits": "Garishly"
+    },
+    {
+      "Material": "Fractoryte",
+      "Durability": "283",
+      "Traits": "Fracture"
+    },
+    {
+      "Material": "Aegisalt",
+      "Durability": "125",
+      "Traits": "Analysing"
+    },
+    {
+      "Material": "Noctunyx",
+      "Durability": "183"
+    },
+    {
+      "Material": "Nucleum",
+      "Durability": "125",
+      "Traits": "Diffuse"
+    },
+    {
+      "Material": "Seismodium",
+      "Durability": "169",
+      "Traits": "Heroic,Fragile"
+    },
+    {
+      "Material": "Lumixyl",
+      "Durability": "130",
+      "Traits": "Glimmer"
+    },
+    {
+      "Material": "Terramite",
+      "Durability": "150",
+      "Traits": "Naturebound,Fragile"
+    },
+    {
+      "Material": "Cryptogen",
+      "Durability": "117",
+      "Traits": "Randomize"
+    },
+    {
+      "Material": "Proxideum",
+      "Durability": "200",
+      "Traits": "Lightweight"
+    },
+    {
+      "Material": "Corrupted",
+      "Durability": "50"
+    },
+    {
+      "Material": "Abyssalnite",
+      "Durability": "100",
+      "Traits": "Purified"
+    },
+    {
+      "Material": "Refined Coralium",
+      "Durability": "100",
+      "Traits": "Coralium-Plagued"
+    },
+    {
+      "Material": "Dreadium",
+      "Durability": "100",
+      "Traits": "Dread-Plagued"
+    },
+    {
+      "Material": "Thundersteel",
+      "Durability": "50",
+      "Traits": "Sparking"
+    },
+    {
+      "Material": "Aquamarine",
+      "Durability": "0",
+      "Traits": "Aerodynamic"
+    },
+    {
+      "Material": "Soulroot",
+      "Durability": "10",
+      "Traits": "Soulbonded"
+    }
+]

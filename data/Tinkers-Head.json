@@ -1,53 +1,578 @@
 [
-    {"Material":"Plastic","Durability":"1500","Level":"1","Speed":"6","Damage":"-1","Traits":"Stonebound"},
-    {"Material":"Sponge","Durability":"1050","Level":"1","Speed":"3.02","Damage":"0","Traits":"Squeaky"},
-    {"Material":"Paper","Durability":"12","Level":"1","Speed":"0.51","Damage":"0.05","Traits":"Writeable"},
-    {"Material":"Soularium","Durability":"1555","Level":"1","Speed":"1","Damage":"1","Traits":"Hellish"},
-    {"Material":"Iron Alloy","Durability":"50","Level":"2","Speed":"1.25","Damage":"1","Traits":"Cheapskate"},
-    {"Material":"Pink Slime","Durability":"2000","Level":"1","Speed":"3","Damage":"1","Traits":"Slimey"},
-    {"Material":"Conductive Iron","Durability":"106","Level":"3","Speed":"6.75","Damage":"1.25","Traits":"Crude II"},
-    {"Material":"Redstone Alloy","Durability":"120","Level":"1","Speed":"2.5","Damage":"1.5","Traits":"Shocking"},
-    {"Material":"Slime","Durability":"1000","Level":"1","Speed":"4.24","Damage":"1.8","Traits":"Slimey"},
-    {"Material":"Blue Slime","Durability":"780","Level":"1","Speed":"4.03","Damage":"1.8","Traits":"Slimey"},
-    {"Material":"Pulsating Iron","Durability":"920","Level":"2","Speed":"6","Damage":"2","Traits":"Vanishing III"},
-    {"Material":"Wood","Durability":"35","Level":"1","Speed":"2","Damage":"2","Traits":"Ecological"},
-    {"Material":"Treated Wood","Durability":"25","Level":"1","Speed":"2","Damage":"2","Traits":"Ecological"},
-    {"Material":"Magical Wood","Durability":"35","Level":"1","Speed":"2","Damage":"2","Traits":"Magically Brittle"},
-    {"Material":"Electrical Steel","Durability":"306","Level":"3","Speed":"6.5","Damage":"2.25","Traits":"Shocking"},
-    {"Material":"Bone","Durability":"200","Level":"2","Speed":"5.09","Damage":"2.5","Traits":"Splintering"},
-    {"Material":"Flint","Durability":"150","Level":"2","Speed":"5","Damage":"2.9","Traits":"Crude II"},
-    {"Material":"Stone","Durability":"120","Level":"2","Speed":"4","Damage":"3","Traits":"Cheapskate"},
-    {"Material":"Netherrack","Durability":"270","Level":"2","Speed":"4.5","Damage":"3","Traits":"Hellish"},
-    {"Material":"Copper","Durability":"210","Level":"2","Speed":"5.3","Damage":"3","Traits":"Well-Established"},
-    {"Material":"Electrum","Durability":"50","Level":"2","Speed":"12","Damage":"3","Traits":"Shocking"},
-    {"Material":"End Stone","Durability":"420","Level":"4","Speed":"3.23","Damage":"3.23","Traits":"Alien"},
-    {"Material":"Cactus","Durability":"210","Level":"2","Speed":"4","Damage":"3.4","Traits":"Prickly"},
-    {"Material":"Bronze","Durability":"430","Level":"3","Speed":"6.8","Damage":"3.5","Traits":"Dense"},
-    {"Material":"Lead","Durability":"434","Level":"2","Speed":"5.25","Damage":"3.5","Traits":"Heavy"},
-    {"Material":"Enchanted Metal","Durability":"350","Level":"2","Speed":"7","Damage":"3.5","Traits":"Experience Boost"},
-    {"Material":"Ardite","Durability":"990","Level":"5","Speed":"3.5","Damage":"3.6","Traits":"Stonebound"},
-    {"Material":"Iron","Durability":"204","Level":"3","Speed":"6","Damage":"4","Traits":"Magnetic II"},
-    {"Material":"Constantan","Durability":"25","Level":"3","Speed":"4.7","Damage":"4","Traits":"Thermal Inversion"},
-    {"Material":"Corrupted","Durability":"204","Level":"3","Speed":"6","Damage":"4","Traits":"Vile"},
-    {"Material":"Cobalt","Durability":"780","Level":"5","Speed":"12","Damage":"4.1","Traits":"Momentum"},
-    {"Material":"Obsidian","Durability":"139","Level":"5","Speed":"7.07","Damage":"4.2","Traits":"Duritae"},
-    {"Material":"Naga Scale","Durability":"460","Level":"2","Speed":"8.9","Damage":"4.3","Traits":"Precipitate"},
-    {"Material":"Pig Iron","Durability":"380","Level":"3","Speed":"6.2","Damage":"4.5","Traits":"Tasty"},
-    {"Material":"End Steel","Durability":"400","Level":"5","Speed":"8.25","Damage":"5","Traits":"Alien"},
-    {"Material":"Silver","Durability":"250","Level":"2","Speed":"5","Damage":"5","Traits":"Holy"},
-    {"Material":"Knightslime","Durability":"850","Level":"4","Speed":"5.8","Damage":"5.1","Traits":"Crumbling"},
-    {"Material":"Firewood","Durability":"550","Level":"1","Speed":"6","Damage":"5.5","Traits":"Autosmelt"},
-    {"Material":"Reinforced Pink Slime","Durability":"2800","Level":"3","Speed":"7.5","Damage":"5.5","Traits":"Dense"},
-    {"Material":"Energetic Alloy","Durability":"690","Level":"4","Speed":"2.5","Damage":"5.6","Traits":"Unnatural"},
-    {"Material":"Dark Steel","Durability":"550","Level":"5","Speed":"7","Damage":"6","Traits":"Enderference"},
-    {"Material":"Steeleaf","Durability":"180","Level":"3","Speed":"7","Damage":"6","Traits":"Synergy"},
-    {"Material":"Knightmetal Ingot","Durability":"900","Level":"5","Speed":"7","Damage":"6","Traits":"Stalwart"},
-    {"Material":"Steel","Durability":"540","Level":"4","Speed":"7","Damage":"6","Traits":"Sharp"},
-    {"Material":"Prismarine","Durability":"430","Level":"2","Speed":"5.5","Damage":"6.2","Traits":"Aquadynamic"},
-    {"Material":"Fiery Ingot","Durability":"720","Level":"4","Speed":"7.2","Damage":"6.6","Traits":"Superheat Flammable"},
-    {"Material":"Magma Slime","Durability":"600","Level":"1","Speed":"2.1","Damage":"7","Traits":"Superheat"},
-    {"Material":"Manyullyn","Durability":"820","Level":"5","Speed":"7.02","Damage":"8.72","Traits":"Insatiable"},
-    {"Material":"Vibrant Alloy","Durability":"220","Level":"5","Speed":"3.5","Damage":"9","Traits":"Vanishing II"},
-    {"Material":"Demonic Metal","Durability":"80","Level":"2","Speed":"0.5","Damage":"11.1","Traits":"Whispering"},
-    {"Material":"Evil Infused Iron","Durability":"666","Level":"5","Speed":"13","Damage":"13","Traits":"Evil Aura"}
-    ]
+      {
+        "Material": "Ardite",
+        "Durability": "990",
+        "Level": "Cobalt",
+        "Speed": "3.5",
+        "Damage": "3.6",
+        "Traits": "Stonebound"
+      },
+      {
+        "Material": "BlueSlime",
+        "Durability": "780",
+        "Level": "Stone",
+        "Speed": "4.03",
+        "Damage": "1.8",
+        "Traits": "Slimey"
+      },
+      {
+        "Material": "Bone",
+        "Durability": "200",
+        "Level": "Iron",
+        "Speed": "5.09",
+        "Damage": "2.5",
+        "Traits": "Splintering"
+      },
+      {
+        "Material": "Bronze",
+        "Durability": "430",
+        "Level": "Diamond",
+        "Speed": "6.8",
+        "Damage": "3.5",
+        "Traits": "Dense"
+      },
+      {
+        "Material": "Cactus",
+        "Durability": "210",
+        "Level": "Iron",
+        "Speed": "4",
+        "Damage": "3.4",
+        "Traits": "Prickly"
+      },
+      {
+        "Material": "Cobalt",
+        "Durability": "780",
+        "Level": "Cobalt",
+        "Speed": "12",
+        "Damage": "4.1",
+        "Traits": "Momentum"
+      },
+      {
+        "Material": "Constantan",
+        "Durability": "25",
+        "Level": "Diamond",
+        "Speed": "4.7",
+        "Damage": "4",
+        "Traits": "Thermal Inversion"
+      },
+      {
+        "Material": "Copper",
+        "Durability": "210",
+        "Level": "Iron",
+        "Speed": "5.3",
+        "Damage": "3",
+        "Traits": "Well-Established"
+      },
+      {
+        "Material": "Electrum",
+        "Durability": "50",
+        "Level": "Iron",
+        "Speed": "12",
+        "Damage": "3",
+        "Traits": "Shocking"
+      },
+      {
+        "Material": "EndStone",
+        "Durability": "420",
+        "Level": "Obsidian",
+        "Speed": "3.23",
+        "Damage": "3.23",
+        "Traits": "Alien"
+      },
+      {
+        "Material": "Firewood",
+        "Durability": "550",
+        "Level": "Stone",
+        "Speed": "6",
+        "Damage": "5.5",
+        "Traits": "Autosmelt"
+      },
+      {
+        "Material": "Flint",
+        "Durability": "150",
+        "Level": "Iron",
+        "Speed": "5",
+        "Damage": "2.9",
+        "Traits": "Crude:2"
+      },
+      {
+        "Material": "Iron",
+        "Durability": "204",
+        "Level": "Diamond",
+        "Speed": "6",
+        "Damage": "4",
+        "Traits": "Magnetic:2"
+      },
+      {
+        "Material": "KnightSlime",
+        "Durability": "850",
+        "Level": "Obsidian",
+        "Speed": "5.8",
+        "Damage": "5.1",
+        "Traits": "Crumbling"
+      },
+      {
+        "Material": "Lava Crystal",
+        "Durability": "110",
+        "Level": "Cobalt",
+        "Speed": "9",
+        "Damage": "4.2",
+        "Traits": "Fire Storm"
+      },
+      {
+        "Material": "Lead",
+        "Durability": "334",
+        "Level": "Iron",
+        "Speed": "5.25",
+        "Damage": "3.5",
+        "Traits": "Poisonous"
+      },
+      {
+        "Material": "MagmaSlime",
+        "Durability": "600",
+        "Level": "Stone",
+        "Speed": "2.1",
+        "Damage": "7",
+        "Traits": "Superheat"
+      },
+      {
+        "Material": "Manyullyn",
+        "Durability": "820",
+        "Level": "Cobalt",
+        "Speed": "7.02",
+        "Damage": "8.72",
+        "Traits": "Insatiable"
+      },
+      {
+        "Material": "Netherrack",
+        "Durability": "270",
+        "Level": "Iron",
+        "Speed": "4.5",
+        "Damage": "3",
+        "Traits": "Aridiculous"
+      },
+      {
+        "Material": "Obsidian",
+        "Durability": "139",
+        "Level": "Cobalt",
+        "Speed": "7.07",
+        "Damage": "4.2",
+        "Traits": "Duritae"
+      },
+      {
+        "Material": "Paper",
+        "Durability": "12",
+        "Level": "Stone",
+        "Speed": "0.51",
+        "Damage": "0.05",
+        "Traits": "Writeable"
+      },
+      {
+        "Material": "Pig Iron",
+        "Durability": "380",
+        "Level": "Obsidian",
+        "Speed": "6.2",
+        "Damage": "4.5",
+        "Traits": "Baconlicious,Tasty"
+      },
+      {
+        "Material": "Prismarine",
+        "Durability": "430",
+        "Level": "Iron",
+        "Speed": "5.5",
+        "Damage": "6",
+        "Traits": "Jagged"
+      },
+      {
+        "Material": "Silver",
+        "Durability": "250",
+        "Level": "Iron",
+        "Speed": "5",
+        "Damage": "5",
+        "Traits": "Holy"
+      },
+      {
+        "Material": "Slime",
+        "Durability": "1000",
+        "Level": "Stone",
+        "Speed": "4.24",
+        "Damage": "1.8",
+        "Traits": "Slimey"
+      },
+      {
+        "Material": "Sponge",
+        "Durability": "1050",
+        "Level": "Stone",
+        "Speed": "3.02",
+        "Damage": "0",
+        "Traits": "Squeaky"
+      },
+      {
+        "Material": "Steel",
+        "Durability": "540",
+        "Level": "Obsidian",
+        "Speed": "7",
+        "Damage": "6",
+        "Traits": "Sharp"
+      },
+      {
+        "Material": "Stone",
+        "Durability": "120",
+        "Level": "Iron",
+        "Speed": "4",
+        "Damage": "3",
+        "Traits": "Cheapskate"
+      },
+      {
+        "Material": "Treated Wood",
+        "Durability": "25",
+        "Level": "Stone",
+        "Speed": "2",
+        "Damage": "2",
+        "Traits": "Ecological"
+      },
+      {
+        "Material": "Wood",
+        "Durability": "35",
+        "Level": "Stone",
+        "Speed": "2",
+        "Damage": "2",
+        "Traits": "Ecological"
+      },
+      {
+        "Material": "Mythril",
+        "Durability": "650",
+        "Level": "Diamond",
+        "Speed": "7.9",
+        "Damage": "3",
+        "Traits": "Modifiable,Dwarvish"
+      },
+      {
+        "Material": "Adamantium",
+        "Durability": "1000",
+        "Level": "Diamond",
+        "Speed": "13.8",
+        "Damage": "3.5",
+        "Traits": "Durable"
+      },
+      {
+        "Material": "Onyx",
+        "Durability": "3000",
+        "Level": "Cobalt",
+        "Speed": "9.9",
+        "Damage": "4",
+        "Traits": "Hellish"
+      },
+      {
+        "Material": "Tiberium",
+        "Durability": "223",
+        "Level": "Obsidian",
+        "Speed": "6.2",
+        "Damage": "8.35",
+        "Traits": "Unstable"
+      },
+      {
+        "Material": "Rubium",
+        "Durability": "351",
+        "Level": "Cobalt",
+        "Speed": "5.15",
+        "Damage": "7",
+        "Traits": "Enderference"
+      },
+      {
+        "Material": "Prometheum",
+        "Durability": "539",
+        "Level": "Titanite",
+        "Speed": "3.6",
+        "Damage": "6.6",
+        "Traits": "Haunted"
+      },
+      {
+        "Material": "Arcanite",
+        "Durability": "698",
+        "Level": "Meteorite",
+        "Speed": "4.3",
+        "Damage": "7.88",
+        "Traits": "Arcane"
+      },
+      {
+        "Material": "Titanite",
+        "Durability": "811",
+        "Level": "Titanite",
+        "Speed": "4.8",
+        "Damage": "6.4",
+        "Traits": "Sharp"
+      },
+      {
+        "Material": "Meteorite",
+        "Durability": "823",
+        "Level": "Meteorite",
+        "Speed": "6.1",
+        "Damage": "6.83",
+        "Traits": "Momentum"
+      },
+      {
+        "Material": "Vibranium",
+        "Durability": "917",
+        "Level": "Vibranium",
+        "Speed": "7.45",
+        "Damage": "7.17",
+        "Traits": "Resonance"
+      },
+      {
+        "Material": "Adamantite",
+        "Durability": "981",
+        "Level": "Adamantite",
+        "Speed": "8.9",
+        "Damage": "9.11",
+        "Traits": "Cold-Blooded"
+      },
+      {
+        "Material": "Eternite",
+        "Durability": "592",
+        "Level": "Cobalt",
+        "Speed": "7.35",
+        "Damage": "1.95",
+        "Traits": "Writeable"
+      },
+      {
+        "Material": "Mythril (TAIGA)",
+        "Durability": "552",
+        "Level": "Titanite",
+        "Speed": "8.75",
+        "Damage": "2.87",
+        "Traits": "Holy"
+      },
+      {
+        "Material": "Palladium",
+        "Durability": "578",
+        "Level": "Meteorite",
+        "Speed": "10.4",
+        "Damage": "3.13",
+        "Traits": "Dark"
+      },
+      {
+        "Material": "Ignitite",
+        "Durability": "673",
+        "Level": "Vibranium",
+        "Speed": "12.1",
+        "Damage": "4.1",
+        "Traits": "Flammable"
+      },
+      {
+        "Material": "Bismuth",
+        "Durability": "235",
+        "Level": "Obsidian",
+        "Speed": "5.33",
+        "Damage": "3.8",
+        "Traits": "Splintering"
+      },
+      {
+        "Material": "Violium",
+        "Durability": "427",
+        "Level": "Cobalt",
+        "Speed": "4.2",
+        "Damage": "3.3",
+        "Traits": "Poisonous"
+      },
+      {
+        "Material": "Mindorite",
+        "Durability": "458",
+        "Level": "Titanite",
+        "Speed": "6.41",
+        "Damage": "4.4",
+        "Traits": "Cheap"
+      },
+      {
+        "Material": "Karmesine",
+        "Durability": "627",
+        "Level": "Meteorite",
+        "Speed": "6.75",
+        "Damage": "5.1",
+        "Traits": "Superheat"
+      },
+      {
+        "Material": "Nitronite",
+        "Durability": "745",
+        "Level": "Titanite",
+        "Speed": "6.74",
+        "Damage": "8.74",
+        "Traits": "Uncertain"
+      },
+      {
+        "Material": "Bysmuid",
+        "Durability": "305",
+        "Level": "Cobalt",
+        "Speed": "5.22",
+        "Damage": "6.47",
+        "Traits": "Melting"
+      },
+      {
+        "Material": "Ultranite",
+        "Durability": "1016",
+        "Level": "Vibranium",
+        "Speed": "5.72",
+        "Damage": "6.76",
+        "Traits": "Pulverizing"
+      },
+      {
+        "Material": "Astrium",
+        "Durability": "670",
+        "Level": "Vibranium",
+        "Speed": "5.28",
+        "Damage": "9.14",
+        "Traits": "Curvature"
+      },
+      {
+        "Material": "Imperomite",
+        "Durability": "770",
+        "Level": "Meteorite",
+        "Speed": "11.6",
+        "Damage": "3.57",
+        "Traits": "Cascade"
+      },
+      {
+        "Material": "Dyonite",
+        "Durability": "733",
+        "Level": "Titanite",
+        "Speed": "6.14",
+        "Damage": "7.69",
+        "Traits": "Slaughtering"
+      },
+      {
+        "Material": "Solarium",
+        "Durability": "1020",
+        "Level": "Adamantite",
+        "Speed": "13.78",
+        "Damage": "4.64",
+        "Traits": "Garishly"
+      },
+      {
+        "Material": "Fractoryte",
+        "Durability": "1071",
+        "Level": "Meteorite",
+        "Speed": "7.65",
+        "Damage": "7.75",
+        "Traits": "Fracture"
+      },
+      {
+        "Material": "Aegisalt",
+        "Durability": "355",
+        "Level": "Titanite",
+        "Speed": "8.88",
+        "Damage": "3.18",
+        "Traits": "Analysing"
+      },
+      {
+        "Material": "Noctunyx",
+        "Durability": "713",
+        "Level": "Meteorite",
+        "Speed": "10.43",
+        "Damage": "3.25",
+        "Traits": "Hollow"
+      },
+      {
+        "Material": "Nucleum",
+        "Durability": "503",
+        "Level": "Titanite",
+        "Speed": "11.3",
+        "Damage": "3.22",
+        "Traits": "Bright"
+      },
+      {
+        "Material": "Seismodium",
+        "Durability": "879",
+        "Level": "Vibranium",
+        "Speed": "13.85",
+        "Damage": "4.19",
+        "Traits": "Heroic,Fragile"
+      },
+      {
+        "Material": "Lumixyl",
+        "Durability": "357",
+        "Level": "Cobalt",
+        "Speed": "4.64",
+        "Damage": "5.92",
+        "Traits": "Glimmer"
+      },
+      {
+        "Material": "Terramite",
+        "Durability": "482",
+        "Level": "Titanite",
+        "Speed": "7.25",
+        "Damage": "2.85",
+        "Traits": "Naturebound,Fragile"
+      },
+      {
+        "Material": "Cryptogen",
+        "Durability": "538",
+        "Level": "Meteorite",
+        "Speed": "5.71",
+        "Damage": "6.93",
+        "Traits": "Randomize"
+      },
+      {
+        "Material": "Proxideum",
+        "Durability": "597",
+        "Level": "Meteorite",
+        "Speed": "10.55",
+        "Damage": "4.21",
+        "Traits": "Lightweight"
+      },
+      {
+        "Material": "Corrupted",
+        "Durability": "204",
+        "Level": "Diamond",
+        "Speed": "7",
+        "Damage": "4",
+        "Traits": "Vile"
+      },
+      {
+        "Material": "Abyssalnite",
+        "Durability": "630",
+        "Level": "Cobalt",
+        "Speed": "10",
+        "Damage": "6",
+        "Traits": "Purified"
+      },
+      {
+        "Material": "Refined Coralium",
+        "Durability": "900",
+        "Level": "Cobalt",
+        "Speed": "12",
+        "Damage": "7",
+        "Traits": "Coralium-Plagued"
+      },
+      {
+        "Material": "Dreadium",
+        "Durability": "1150",
+        "Level": "Diamond",
+        "Speed": "14",
+        "Damage": "8",
+        "Traits": "Dread-Plagued"
+      },
+      {
+        "Material": "Thundersteel",
+        "Durability": "204",
+        "Level": "Obsidian",
+        "Speed": "6",
+        "Damage": "4",
+        "Traits": "Thunderclast"
+      },
+      {
+        "Material": "Aquamarine",
+        "Durability": "60",
+        "Level": "Iron",
+        "Speed": "4",
+        "Damage": "2.9",
+        "Traits": "Storming"
+      },
+      {
+        "Material": "Soulroot",
+        "Durability": "35",
+        "Level": "Stone",
+        "Speed": "2",
+        "Damage": "2",
+        "Traits": "Soulbonded"
+      }
+]

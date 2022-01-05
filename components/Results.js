@@ -26,10 +26,10 @@ function Results({category,query}) {
 
     const Extra = ({query}) => {
         let res =extra_searcher.search(query);
-        const handleIncrease = (event,tool) =>
+        const handleIncrease = (event,material) =>
             dispatch({
             type: 'SET_EXTRA',
-            extra:[tool]
+            extra:[material]
         })
         function click(event, someParameter){
             event.preventDefault();
@@ -74,10 +74,10 @@ function Results({category,query}) {
 
     const Head = ({query}) => {
         let res =head_searcher.search(query);
-        const handleIncrease = (event,tool) =>
+        const handleIncrease = (event,material) =>
         dispatch({
         type: 'SET_HEAD',
-        head:[tool]
+        head:[material]
         })
         function click(event, someParameter){
             event.preventDefault();
@@ -156,10 +156,10 @@ function Results({category,query}) {
 
     const Handle = ({query}) => {
         let res =handle_searcher.search(query);
-        const handleIncrease = (event,tool) =>
+        const handleIncrease = (event,material) =>
             dispatch({
             type: 'SET_HANDLE',
-            handle:[tool]
+            handle:[material]
         })
         function click(event, someParameter){
             event.preventDefault();

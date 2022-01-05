@@ -18,9 +18,9 @@ function Search() {
                 <div className="text-gray-200">Working on {count.tool}</div>
                 <div className="space-y-3">
                 <div className="gap-4">
-                <div className="text-gray-200">Need {count.headnos - count.head.length} head piece</div>
-                <div className="text-gray-200">Need {count.extranos- count.extra.length} extra piece</div>
-                <div className="text-gray-200">Need {count.handlenos- count.handle.length} handle piece</div>
+                {count.parts.filter(function(e){return e}).map(part => ( 
+                    <div className="text-gray-200">Need {part}</div>
+                ))}
                 </div>
                 <div className="h-2 bg-gray-700 rounded"></div>
                 </div>
