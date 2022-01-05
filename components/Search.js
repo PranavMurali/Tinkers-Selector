@@ -18,10 +18,8 @@ function Search() {
                 <div className="text-gray-200">Working on {count.tool}</div>
                 <div className="space-y-3">
                 <div className="gap-4">
-                    {console.log(count)}
-                {count.parts.map(part => ( 
-                   <div className="text-gray-200">Need {part}</div>
-                
+                {count.parts.filter(function(e){return e}).map(part => ( 
+                    <div className="text-gray-200">Need {part}</div>
                 ))}
                 </div>
                 <div className="h-2 bg-gray-700 rounded"></div>

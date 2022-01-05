@@ -9,11 +9,14 @@ const Weapon = ({query}) => {
     const count = useCount()
     const dispatch = useDispatchCount()
 
-    const handleIncrease = (event,tool,c1,c2,c3) =>
+    const handleIncrease = (tool,cmps,exnos,hednos,handnos) =>
     dispatch({
-      type: 'SET_TOOL',
-      tool: tool,
-      parts:[c1,c2,c3],
+        type: 'SET_TOOL',
+        tool: tool,
+        parts: cmps,
+        extranos: exnos,
+        headnos: hednos,
+        handlenos: handnos,
     })
 
     const searcher = new FuzzySearch(Weapons, ['Tool'], {
@@ -22,11 +25,10 @@ const Weapon = ({query}) => {
       });
 
     let res = searcher.search(query);
-    function click(event, tool,c1,c2,c3) {
+    function click(event, tool,cmps,exnos,hednos,handnos) {
         event.preventDefault();
         setTool(tool);
-        handleIncrease(event,tool,c1,c2,c3);
-        console.log(count.tool)
+        handleIncrease(tool,cmps,exnos,hednos,handnos);
     }
 
     return (
@@ -68,19 +70,13 @@ const Weapon = ({query}) => {
             <p className="text-gray-300 text-base">Damage Cutoff</p>
             <p className="text-yellow-300 text-sm"> {results.DmgCutoff}</p>
         </div>
-        <div>
-            <p className="text-gray-300 text-base">Part 1</p>
-            <p className="text-yellow-300 text-sm"> {results.c1}</p>
-        </div>
-        <div>
-            <p className="text-gray-300 text-base">Part 2</p>
-            <p className="text-yellow-300 text-sm"> {results.c2}</p>
-        </div>
-        <div>
-            <p className="text-gray-300 text-base">Part 3</p>
-            <p className="text-yellow-300 text-sm"> {results.c3}</p>
-        </div>
-        <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Tool,results.c1,results.c2,results.c3);}}>add</button>
+        <p className="text-gray-300 text-base">Parts</p>
+        {results.cmps.map(cmp =>
+            <div>
+                <p className="text-yellow-300 text-sm"> {cmp}</p>
+            </div>
+        )}
+        <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Tool,results.cmps,results.extranos,results.hednos,results.handnos);}}>add</button>
 
         </div>
         </div>):<h2></h2>}
