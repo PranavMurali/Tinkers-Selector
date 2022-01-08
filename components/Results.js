@@ -51,7 +51,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
-            {(count.extranos - count.extra.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.extranos - count.extra.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
             </div>):res.map(results => 
             <div className="flex flex-row">
             <div className="bg-purple-600 rounded shadow border border-black p-6 w-64">
@@ -65,7 +65,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
-            {(count.extranos - count.extra.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.extranos - count.extra.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
             </div>)}
             </div>
             </>
@@ -116,7 +116,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Damage}</p>
             </div>
             </div>
-            {(count.headnos - count.head.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.hednos - count.head.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
             </div>):res.map(results => 
             <div className="flex flex-row">
             <div className="bg-purple-600 rounded shadow border border-black p-6 w-64">
@@ -147,7 +147,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Damage}</p>
             </div>
             </div>
-            {(count.headnos - count.head.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.hednos - count.head.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
             </div>)}
             </div>
             </>
@@ -186,7 +186,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
-            {(count.handlenos - count.handle.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.handnos - count.handle.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
             </div>):res.map(results => 
             <div className="flex flex-row">
             <div className="bg-purple-600 rounded shadow border border-black p-6 w-64">
@@ -204,7 +204,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
-            {(count.handlenos - count.handle.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.handnos - count.handle.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
             </div>)}
             </div>
             </>

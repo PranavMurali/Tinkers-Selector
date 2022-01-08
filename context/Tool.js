@@ -9,10 +9,6 @@ const reducer = (state, action) => {
     return {
         ...state,
         tool: action.tool,
-        parts: action.parts,
-        extranos: action.extranos,
-        headnos: action.headnos,
-        handlenos: action.handlenos,
     }
     case 'SET_EXTRA':
     return {
@@ -33,14 +29,10 @@ const reducer = (state, action) => {
     return {
         ...state,
         wps: [...state.wps,action.w1],
-        tool: '',
+        tool: [],
         head:[] ,
-        headnos: 0,
         handle: [],
-        handlenos: 0,
         extra: [],
-        extranos: 0,
-        parts: [],
     }
     default:
       throw new Error(`Unknown action: ${action.type}`)
@@ -48,17 +40,13 @@ const reducer = (state, action) => {
 }
 
 const initialState = {
-  tool: '',
   extra: [],
   head: [],
   handle: [],
   wps:[],
-  extranos:0,
-  headnos:0,
-  handlenos:0,
-  parts:[],
   dmg:0,
   dura:0,
+  tool:[],
 }
 
 export const CounterProvider = ({ children }) => {

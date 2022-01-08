@@ -15,10 +15,11 @@ function Search() {
         <div className="border border-blue-300 shadow rounded-md p-4 max-w-prose w-full mx-auto sticky top-10">
             <div className="animate-pulse flex space-x-4">
             <div className="flex-1 space-y-6 py-1">
-                <div className="text-gray-200">Working on {count.tool}</div>
+                <div className="text-gray-200">Working on {count.tool.Tool}</div>
+                {console.log(count.tool)}
                 <div className="space-y-3">
                 <div className="gap-4">
-                {count.parts.filter(function(e){return e}).map(part => ( 
+                {count.tool.cmps.filter(function(e){return e}).map(part => ( 
                     <div className="text-gray-200">Need {part}</div>
                 ))}
                 </div>
