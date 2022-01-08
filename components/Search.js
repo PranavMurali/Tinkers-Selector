@@ -16,7 +16,6 @@ function Search() {
             <div className="animate-pulse flex space-x-4">
             <div className="flex-1 space-y-6 py-1">
                 <div className="text-gray-200">Working on {count.tool.Tool}</div>
-                {console.log(count.tool)}
                 <div className="space-y-3">
                 <div className="gap-4">
                 {count.tool.cmps.filter(function(e){return e}).map(part => ( 

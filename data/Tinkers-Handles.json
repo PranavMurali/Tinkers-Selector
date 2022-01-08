@@ -1,8 +1,8 @@
 [
         {
           "Material": "Ardite",
-          "Modifier": "1.4",
-          "Durability": "-200",
+          "Modifier": 1.4,
+          "Durability": -200,
           "Traits": "Petramor"
         },
         {

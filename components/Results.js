@@ -26,14 +26,14 @@ function Results({category,query}) {
 
     const Extra = ({query}) => {
         let res =extra_searcher.search(query);
-        const handleIncrease = (event,material) =>
+        const handleIncrease = (event,extra) =>
             dispatch({
             type: 'SET_EXTRA',
-            extra:[material]
+            extra:extra
         })
-        function click(event, someParameter){
+        function click(event, extra){
             event.preventDefault();
-            handleIncrease(event,someParameter);
+            handleIncrease(event,extra);
         }
         return(
             <>
@@ -51,7 +51,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
-            {(count.tool.extranos - count.extra.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.extranos - count.extra.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results);}}>add</button> : <></>}
             </div>):res.map(results => 
             <div className="flex flex-row">
             <div className="bg-purple-600 rounded shadow border border-black p-6 w-64">
@@ -65,7 +65,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
-            {(count.tool.extranos - count.extra.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.extranos - count.extra.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results);}}>add</button> : <></>}
             </div>)}
             </div>
             </>
@@ -74,14 +74,14 @@ function Results({category,query}) {
 
     const Head = ({query}) => {
         let res =head_searcher.search(query);
-        const handleIncrease = (event,material) =>
+        const handleIncrease = (event,head) =>
         dispatch({
         type: 'SET_HEAD',
-        head:[material]
+        head:head
         })
-        function click(event, someParameter){
+        function click(event, head){
             event.preventDefault();
-            handleIncrease(event,someParameter);
+            handleIncrease(event,head);
         }
         return(
             <>
@@ -116,7 +116,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Damage}</p>
             </div>
             </div>
-            {(count.tool.hednos - count.head.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.hednos - count.head.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results);}}>add</button> : <></>}
             </div>):res.map(results => 
             <div className="flex flex-row">
             <div className="bg-purple-600 rounded shadow border border-black p-6 w-64">
@@ -147,7 +147,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Damage}</p>
             </div>
             </div>
-            {(count.tool.hednos - count.head.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.hednos - count.head.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results);}}>add</button> : <></>}
             </div>)}
             </div>
             </>
@@ -156,14 +156,14 @@ function Results({category,query}) {
 
     const Handle = ({query}) => {
         let res =handle_searcher.search(query);
-        const handleIncrease = (event,material) =>
+        const handleIncrease = (event,handle) =>
             dispatch({
             type: 'SET_HANDLE',
-            handle:[material]
+            handle:handle,
         })
-        function click(event, someParameter){
+        function click(event, handle){
             event.preventDefault();
-            handleIncrease(event,someParameter);
+            handleIncrease(event,handle);
         }
 
         return(
@@ -186,7 +186,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
-            {(count.tool.handnos - count.handle.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.handnos - count.handle.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results);}}>add</button> : <></>}
             </div>):res.map(results => 
             <div className="flex flex-row">
             <div className="bg-purple-600 rounded shadow border border-black p-6 w-64">
@@ -204,7 +204,7 @@ function Results({category,query}) {
                 <p className="text-yellow-300 text-sm"> {results.Durability}</p>
             </div>
             </div>
-            {(count.tool.handnos - count.handle.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results.Material);}}>add</button> : <></>}
+            {(count.tool.handnos - count.handle.length >0) ? <button className="bg-green-700 rounded shadow border border-black h-10 w-10 text-center self-end" onClick={(e) => {click(e, results);}}>add</button> : <></>}
             </div>)}
             </div>
             </>

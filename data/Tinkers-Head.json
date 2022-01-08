@@ -1,18 +1,18 @@
 [
       {
         "Material": "Ardite",
-        "Durability": "990",
+        "Durability": 990,
         "Level": "Cobalt",
-        "Speed": "3.5",
-        "Damage": "3.6",
+        "Speed": 3.5,
+        "Damage": 3.6,
         "Traits": "Stonebound"
       },
       {
         "Material": "BlueSlime",
-        "Durability": "780",
+        "Durability": 780,
         "Level": "Stone",
-        "Speed": "4.03",
-        "Damage": "1.8",
+        "Speed": 4.03,
+        "Damage": 1.8,
         "Traits": "Slimey"
       },
       {

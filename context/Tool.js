@@ -9,6 +9,9 @@ const reducer = (state, action) => {
     return {
         ...state,
         tool: action.tool,
+        head:[] ,
+        handle: [],
+        extra: [],
     }
     case 'SET_EXTRA':
     return {
