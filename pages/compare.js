@@ -19,6 +19,27 @@ export default function Home() {
   w1: [wp],
   })
 
+function calcs(wp) {
+  switch (wp.tool.Tool) {
+    case 'Broadsword' || 'Longsword'|| 'Dagger' ||'Rapier':
+      return wp.head[0].Durability * wp.hand[0].Modifier;
+    case 'Hammer':
+      return (wp.head[0].Durability + wp.extra[0].Durability + wp.extra[1].Durability)* wp.hand[0].Modifier * 3;
+    case 'Scythe':
+     return (wp.head[0].Durability* 2 *(wp.hand[0].Modifier+wp.hand[1].Modifier+wp.extra[0].Modifier));
+    case 'Cleaver':
+      return (5.625 * ((wp.head[0].Durability + wp.extra[0].Durability)/2) *((wp.hand[0].Modifier + wp.hand[1].Modifier))/2);
+    case 'Shovel' || 'Pickaxe':
+      return (wp.head[0].Durability * wp.hand[0].Modifier);
+    case 'Mattock':
+      return ((wp.head[0].Durability + wp.head[1].Durability) * 0.75 * wp.hand[0].Modifier);
+    case 'Lumberaxe' || 'Excavator':
+      return ((wp.head[0].Durability + wp.extra[0].Durability) * (wp.extra[0].Modifier + wp.hand[0].Modifier) * 1.5);
+    default:
+      console.log(`${wp.tool.tool} doenst have a formula yet!`);
+  }
+}
+
   function click(event){
     event.preventDefault();
     handleSave(event);
@@ -43,7 +64,8 @@ export default function Home() {
                   <p className="text-yellow-300 text-sm"> {extra.Material}</p>
               )}
               <p className="text-gray-300 text-base">Damage:</p>
-              <p className="text-gray-300 text-base">Durability: {Math.max(1,Math.floor((results[0].head[0].Durability+results[0].extra[0].Durability)*results[0].hand[0].Modifier)+results[0].hand[0].Durability)}</p>
+              <p className="text-gray-300 text-base">Durability: {calcs(results[0])}</p>
+              {console.log(calcs(results[0]))}
               {/* IMPLEMENT THE FORMULAS AND DISPLAY STATS IN spereate lines here*/}
           </div>
         </div>
