@@ -7,427 +7,427 @@
         },
         {
           "Material": "BlueSlime",
-          "Modifier": "1.3",
-          "Durability": "-50",
+          "Modifier": 1.3,
+          "Durability": -50,
           "Traits": "Slimey"
         },
         {
           "Material": "Bone",
-          "Modifier": "1.1",
-          "Durability": "50",
+          "Modifier": 1.1,
+          "Durability": 50,
           "Traits": "Fractured"
         },
         {
           "Material": "Bronze",
-          "Modifier": "1.1",
-          "Durability": "70",
+          "Modifier": 1.1,
+          "Durability": 70,
           "Traits": "Dense"
         },
         {
           "Material": "Cactus",
-          "Modifier": "0.85",
-          "Durability": "20",
+          "Modifier": 0.85,
+          "Durability": 20,
           "Traits": "Spiky"
         },
         {
           "Material": "Cobalt",
-          "Modifier": "0.9",
-          "Durability": "100",
+          "Modifier": 0.9,
+          "Durability": 100,
           "Traits": "Lightweight"
         },
         {
           "Material": "Constantan",
-          "Modifier": "0.8",
-          "Durability": "60",
+          "Modifier": 0.8,
+          "Durability": 60,
           "Traits": "Thermal Inversion"
         },
         {
           "Material": "Copper",
-          "Modifier": "1.05",
-          "Durability": "30",
+          "Modifier": 1.05,
+          "Durability": 30,
           "Traits": "Well-Established"
         },
         {
           "Material": "Electrum",
-          "Modifier": "1.1",
-          "Durability": "-25",
+          "Modifier": 1.1,
+          "Durability": -25,
           "Traits": "Shocking"
         },
         {
           "Material": "EndStone",
-          "Modifier": "0.85",
-          "Durability": "0",
+          "Modifier": 0.85,
+          "Durability": 0,
           "Traits": "Enderference"
         },
         {
           "Material": "Firewood",
-          "Modifier": "1",
-          "Durability": "-200",
+          "Modifier": 1,
+          "Durability": -200,
           "Traits": "Autosmelt"
         },
         {
           "Material": "Flint",
-          "Modifier": "0.6",
-          "Durability": "-60",
+          "Modifier": 0.6,
+          "Durability": -60,
           "Traits": "Crude"
         },
         {
           "Material": "Iron",
-          "Modifier": "0.85",
-          "Durability": "60",
+          "Modifier": 0.85,
+          "Durability": 60,
           "Traits": "Magnetic"
         },
         {
           "Material": "KnightSlime",
-          "Modifier": "0.5",
-          "Durability": "500",
+          "Modifier": 0.5,
+          "Durability": 500,
           "Traits": "Unnatural"
         },
         {
           "Material": "Lava Crystal",
-          "Modifier": "1",
-          "Durability": "100",
+          "Modifier": 1,
+          "Durability": 100,
           "Traits": "Autosmelt"
         },
         {
           "Material": "Lead",
-          "Modifier": "0.7",
-          "Durability": "-50",
+          "Modifier": 0.7,
+          "Durability": -50,
           "Traits": "Poisonous"
         },
         {
           "Material": "MagmaSlime",
-          "Modifier": "0.85",
-          "Durability": "-200",
+          "Modifier": 0.85,
+          "Durability": -200,
           "Traits": "Flammable"
         },
         {
           "Material": "Manyullyn",
-          "Modifier": "0.5",
-          "Durability": "250",
+          "Modifier": 0.5,
+          "Durability": 250,
           "Traits": "Cold-Blooded"
         },
         {
           "Material": "Netherrack",
-          "Modifier": "0.85",
-          "Durability": "-150",
+          "Modifier": 0.85,
+          "Durability": -150,
           "Traits": "Hellish"
         },
         {
           "Material": "Obsidian",
-          "Modifier": "0.9",
-          "Durability": "-100",
+          "Modifier": 0.9,
+          "Durability": -100,
           "Traits": "Duritae"
         },
         {
           "Material": "Paper",
-          "Modifier": "0.1",
-          "Durability": "5",
+          "Modifier": 0.1,
+          "Durability": 5,
           "Traits": "Writeable"
         },
         {
           "Material": "Pig Iron",
-          "Modifier": "1.2",
-          "Durability": "-100",
+          "Modifier": 1.2,
+          "Durability": -100,
           "Traits": "Tasty"
         },
         {
           "Material": "Prismarine",
-          "Modifier": "0.6",
-          "Durability": "-150",
+          "Modifier": 0.6,
+          "Durability": -150,
           "Traits": "Aquadynamic"
         },
         {
           "Material": "Silver",
-          "Modifier": "0.95",
-          "Durability": "50",
+          "Modifier": 0.95,
+          "Durability": 50,
           "Traits": "Holy"
         },
         {
           "Material": "Slime",
-          "Modifier": "0.7",
-          "Durability": "0",
+          "Modifier": 0.7,
+          "Durability": 0,
           "Traits": "Slimey"
         },
         {
           "Material": "Sponge",
-          "Modifier": "1.2",
-          "Durability": "250",
+          "Modifier": 1.2,
+          "Durability": 250,
           "Traits": "Squeaky"
         },
         {
           "Material": "Steel",
-          "Modifier": "0.9",
-          "Durability": "150",
+          "Modifier": 0.9,
+          "Durability": 150,
           "Traits": "Stiff"
         },
         {
           "Material": "Stone",
-          "Modifier": "0.5",
-          "Durability": "-50",
+          "Modifier": 0.5,
+          "Durability": -50,
           "Traits": "Cheap"
         },
         {
           "Material": "Treated Wood",
-          "Modifier": "1",
-          "Durability": "35",
+          "Modifier": 1,
+          "Durability": 35,
           "Traits": "Ecological"
         },
         {
           "Material": "Wood",
-          "Modifier": "1",
-          "Durability": "25",
+          "Modifier": 1,
+          "Durability": 25,
           "Traits": "Ecological"
         },
         {
           "Material": "Mythril",
-          "Modifier": "1.15",
-          "Durability": "65",
+          "Modifier": 1.15,
+          "Durability": 65,
           "Traits": "Modifiable"
         },
         {
           "Material": "Adamantium",
-          "Modifier": "1.2",
-          "Durability": "75",
+          "Modifier": 1.2,
+          "Durability": 75,
           "Traits": "Lightweight"
         },
         {
           "Material": "Onyx",
-          "Modifier": "0.95",
-          "Durability": "275",
+          "Modifier": 0.95,
+          "Durability": 275,
           "Traits": "Aridiculous"
         },
         {
           "Material": "Tiberium",
-          "Modifier": "0.63",
-          "Durability": "50",
+          "Modifier": 0.63,
+          "Durability": 50,
           "Traits": "Unstable"
         },
         {
           "Material": "Rubium",
-          "Modifier": "1.05",
-          "Durability": "-100",
+          "Modifier": 1.05,
+          "Durability": -100,
           "Traits": "Blind"
         },
         {
           "Material": "Prometheum",
-          "Modifier": "0.9",
-          "Durability": "0",
+          "Modifier": 0.9,
+          "Durability": 0,
           "Traits": "Blind"
         },
         {
           "Material": "Arcanite",
-          "Modifier": "0.85",
-          "Durability": "-50",
+          "Modifier": 0.85,
+          "Durability": -50,
           "Traits": "Blind"
         },
         {
           "Material": "Titanite",
-          "Modifier": "1",
-          "Durability": "-50",
+          "Modifier": 1,
+          "Durability": -50,
           "Traits": "Shocking"
         },
         {
           "Material": "Meteorite",
-          "Modifier": "1.2",
-          "Durability": "-50",
+          "Modifier": 1.2,
+          "Durability": -50,
           "Traits": "Well-Established"
         },
         {
           "Material": "Vibranium",
-          "Modifier": "1.15",
-          "Durability": "50",
+          "Modifier": 1.15,
+          "Durability": 50,
           "Traits": "Resonance"
         },
         {
           "Material": "Adamantite",
-          "Modifier": "1.2",
-          "Durability": "-200",
+          "Modifier": 1.2,
+          "Durability": -200,
           "Traits": "Magnetic"
         },
         {
           "Material": "Eternite",
-          "Modifier": "1.1",
-          "Durability": "150",
+          "Modifier": 1.1,
+          "Durability": 150,
           "Traits": "Writeable"
         },
         {
           "Material": "Mythril (TAIGA)",
-          "Modifier": "0.98",
-          "Durability": "-100",
+          "Modifier": 0.98,
+          "Durability": -100,
           "Traits": "Hellish"
         },
         {
           "Material": "Palladium",
-          "Modifier": "1.09",
-          "Durability": "0",
+          "Modifier": 1.09,
+          "Durability": 0,
           "Traits": "Dark"
         },
         {
           "Material": "Ignitite",
-          "Modifier": "1.15",
-          "Durability": "-50",
+          "Modifier": 1.15,
+          "Durability": -50,
           "Traits": "Melting"
         },
         {
           "Material": "Bismuth",
-          "Modifier": "1.15",
-          "Durability": "17",
+          "Modifier": 1.15,
+          "Durability": 17,
           "Traits": "Splinters"
         },
         {
           "Material": "Violium",
-          "Modifier": "1",
-          "Durability": "133",
+          "Modifier": 1,
+          "Durability": 133,
           "Traits": "Stonebound"
         },
         {
           "Material": "Mindorite",
-          "Modifier": "0.9",
-          "Durability": "83",
+          "Modifier": 0.9,
+          "Durability": 83,
           "Traits": "Cheap"
         },
         {
           "Material": "Karmesine",
-          "Modifier": "0.99",
-          "Durability": "0",
+          "Modifier": 0.99,
+          "Durability": 0,
           "Traits": "Aridiculous"
         },
         {
           "Material": "Nitronite",
-          "Modifier": "0.85",
-          "Durability": "75",
+          "Modifier": 0.85,
+          "Durability": 75,
           "Traits": "Uncertain"
         },
         {
           "Material": "Bysmuid",
-          "Modifier": "1.09",
-          "Durability": "-80",
+          "Modifier": 1.09,
+          "Durability": -80,
           "Traits": "Organizing"
         },
         {
           "Material": "Ultranite",
-          "Modifier": "1.02",
-          "Durability": "-120",
+          "Modifier": 1.02,
+          "Durability": -120,
           "Traits": "Pulverizing"
         },
         {
           "Material": "Astrium",
-          "Modifier": "0.91",
-          "Durability": "-45",
+          "Modifier": 0.91,
+          "Durability": -45,
           "Traits": "Curvature"
         },
         {
           "Material": "Imperomite",
-          "Modifier": "1.05",
-          "Durability": "-38",
+          "Modifier": 1.05,
+          "Durability": -38,
           "Traits": "Cascade"
         },
         {
           "Material": "Dyonite",
-          "Modifier": "0.97",
-          "Durability": "-15",
+          "Modifier": 0.97,
+          "Durability": -15,
           "Traits": "Dissolving"
         },
         {
           "Material": "Solarium",
-          "Modifier": "1.15",
-          "Durability": "0",
+          "Modifier": 1.15,
+          "Durability": 0,
           "Traits": "Garishly"
         },
         {
           "Material": "Fractoryte",
-          "Modifier": "1.15",
-          "Durability": "-250",
+          "Modifier": 1.15,
+          "Durability": -250,
           "Traits": "Fracture"
         },
         {
           "Material": "Aegisalt",
-          "Modifier": "1",
-          "Durability": "175",
+          "Modifier": 1,
+          "Durability": 175,
           "Traits": "Analysing"
         },
         {
           "Material": "Noctunyx",
-          "Modifier": "0.99",
-          "Durability": "-125",
+          "Modifier": 0.99,
+          "Durability": -125,
           "Traits": "Reviving"
         },
         {
           "Material": "Nucleum",
-          "Modifier": "1.05",
-          "Durability": "100",
+          "Modifier": 1.05,
+          "Durability": 100,
           "Traits": "Diffuse"
         },
         {
           "Material": "Seismodium",
-          "Modifier": "1.17",
-          "Durability": "-75",
+          "Modifier": 1.17,
+          "Durability": -75,
           "Traits": "Heroic,Fragile"
         },
         {
           "Material": "Lumixyl",
-          "Modifier": "1.05",
-          "Durability": "15",
+          "Modifier": 1.05,
+          "Durability": 15,
           "Traits": "Glimmer"
         },
         {
           "Material": "Terramite",
-          "Modifier": "1.03",
-          "Durability": "208",
+          "Modifier": 1.03,
+          "Durability": 208,
           "Traits": "Naturebound,Fragile"
         },
         {
           "Material": "Cryptogen",
-          "Modifier": "0.88",
-          "Durability": "58",
+          "Modifier": 0.88,
+          "Durability": 58,
           "Traits": "Randomize"
         },
         {
           "Material": "Proxideum",
-          "Modifier": "0.99",
-          "Durability": "-60",
+          "Modifier": 0.99,
+          "Durability": -60,
           "Traits": "Softy"
         },
         {
           "Material": "Corrupted",
-          "Modifier": "0.85",
-          "Durability": "60"
+          "Modifier": 0.85,
+          "Durability": 60
         },
         {
           "Material": "Abyssalnite",
-          "Modifier": "0.9",
-          "Durability": "60",
+          "Modifier": 0.9,
+          "Durability": 60,
           "Traits": "Purified"
         },
         {
           "Material": "Refined Coralium",
-          "Modifier": "0.9",
-          "Durability": "60",
+          "Modifier": 0.9,
+          "Durability": 60,
           "Traits": "Coralium-Plagued"
         },
         {
           "Material": "Dreadium",
-          "Modifier": "0.9",
-          "Durability": "60",
+          "Modifier": 0.9,
+          "Durability": 60,
           "Traits": "Dread-Plagued"
         },
         {
           "Material": "Thundersteel",
-          "Modifier": "0.85",
-          "Durability": "60",
+          "Modifier": 0.85,
+          "Durability": 60,
           "Traits": "Sparking"
         },
         {
           "Material": "Aquamarine",
-          "Modifier": "0.5",
-          "Durability": "0",
+          "Modifier": 0.5,
+          "Durability": 0,
           "Traits": "Aerodynamic"
         },
         {
           "Material": "Soulroot",
-          "Modifier": "1",
-          "Durability": "10",
+          "Modifier": 1,
+          "Durability": 10,
           "Traits": "Soulbonded"
         }
 ]
