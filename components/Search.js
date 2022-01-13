@@ -15,12 +15,13 @@ function Search() {
         <div className="border border-blue-300 shadow rounded-md p-4 max-w-prose w-full mx-auto sticky top-10">
             <div className="animate-pulse flex space-x-4">
             <div className="flex-1 space-y-6 py-1">
-                <div className="text-gray-200">Working on {count.tool}</div>
+                <div className="text-gray-200">Working on {count.tool.Tool !=null ? count.tool.Tool : "Nothing :("}</div>
                 <div className="space-y-3">
                 <div className="gap-4">
-                {count.parts.filter(function(e){return e}).map(part => ( 
+                {count.tool.cmps!=null ? count.tool.cmps.filter(function(e){return e}).map(part => ( 
                     <div className="text-gray-200">Need {part}</div>
-                ))}
+                )):null}
+
                 </div>
                 <div className="h-2 bg-gray-700 rounded"></div>
                 </div>
