@@ -35,14 +35,28 @@ function calcs(wp) {
       return ((wp.head[0].Durability + wp.head[1].Durability) * 0.75 * wp.hand[0].Modifier);
     case 'Lumberaxe' || 'Excavator':
       return ((wp.head[0].Durability + wp.extra[0].Durability) * (wp.extra[0].Modifier + wp.hand[0].Modifier) * 1.5);
+    
     default:
-      console.log(`${wp.tool.tool} doenst have a formula yet!`);
+      return(`${wp.tool.Tool} doesn't have a formula yet!`);
   }
 }
 
+function dmg(wp){
+  switch (wp.tool.Tool) {
+    case 'Shuriken':
+      return (0.7 * (wp.head[0].Damage + wp.head[1].Damage + wp.head[2].Damage + wp.head[3].Damage ) + 1.7);
+    default:
+      return(`${wp.tool.Tool} doesn't have a formula yet!`);
+}}
+
   function click(event){
     event.preventDefault();
-    handleSave(event);
+    if (count.tool.Tool == null){
+      alert("Please select a tool!");
+    }
+    else{
+      handleSave(event);
+    }
   }
   return (
     <div className="space-y-6 flex flex-row">
@@ -63,9 +77,8 @@ function calcs(wp) {
               {results[0].extra.map(extra =>   
                   <p className="text-yellow-300 text-sm"> {extra.Material}</p>
               )}
-              <p className="text-gray-300 text-base">Damage:</p>
+              <p className="text-gray-300 text-base">Damage: {dmg(results[0])}</p>
               <p className="text-gray-300 text-base">Durability: {calcs(results[0])}</p>
-              {console.log(calcs(results[0]))}
               {/* IMPLEMENT THE FORMULAS AND DISPLAY STATS IN spereate lines here*/}
           </div>
         </div>
