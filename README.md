@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tinker's Selector
+## Built using NextJS and TailwindCSS
+#### Tinkers' Construct adds various patterns which allows the player to make tool parts out of various materials such as Cactus, Paper and Obsidian. Each material has a unique property to it and may enhance the capabilities of the final product. It offers a large choice of tools ranging from normal pickaxes and shovels to the Hammer which will clear any stone/ores in a 3x3 area and the Mattock which is a combination of an axe, shovel and a hoe. Customizable arrows and bows are also available.
 
-## Getting Started
+#### This website aims to help compare different tools in Tinker's construct and supported mods, I'd love feedback, keep in mind that the UI is meant to be barebones, but I'd appreciate help in the formulas and the damage and durability calculations as I've built the website with a decent number of publicly available formulas and still need a bunch for damage and other calculations.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+#### Home page with weapon/tool selection
+<img src="../main/readme/Home.png" alt="Home">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Part selection page
+<img src="../main/readme/partSearch.png" alt="PartSearch">
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### Head part selection
+<img src="../main/readme/headSelect.png" alt="head">
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+#### Handle part selection
+<img src="../main/readme/handleSelect.png" alt="handle">
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### Extra part selection
+<img src="../main/readme/ExtraSelect.png" alt="extra">
 
-## Learn More
+#### Comparison Page
+<img src="../main/readme/compared.png" alt="compare">
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### The materials are chosen from the dataset created by me and available here - https://www.kaggle.com/pranavmurali1/tinkers-construct
+## NOTE: Some of the calculations are still currently unavailable due to lack of availability of formulas, but if you get/or know any, let me know!
