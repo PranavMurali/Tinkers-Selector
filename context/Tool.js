@@ -1,67 +1,67 @@
-import { useReducer, useContext, createContext } from 'react'
+import { useReducer, useContext, createContext } from "react";
 
-const CounterStateContext = createContext()
-const CounterDispatchContext = createContext()
+const CounterStateContext = createContext();
+const CounterDispatchContext = createContext();
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'SET_TOOL':
-    return {
+    case "SET_TOOL":
+      return {
         ...state,
         tool: action.tool,
-        head:[] ,
+        head: [],
         handle: [],
         extra: [],
-    }
-    case 'SET_EXTRA':
-    return {
+      };
+    case "SET_EXTRA":
+      return {
         ...state,
-        extra:[...state.extra,action.extra],
-    }
-    case 'SET_HEAD':
-    return {
+        extra: [...state.extra, action.extra],
+      };
+    case "SET_HEAD":
+      return {
         ...state,
-        head:[...state.head,action.head],
-    }
-    case 'SET_HANDLE':
-    return {
+        head: [...state.head, action.head],
+      };
+    case "SET_HANDLE":
+      return {
         ...state,
-        handle:[...state.handle,action.handle],
-    }
-    case 'RESET_TOOL':
-    return {
+        handle: [...state.handle, action.handle],
+      };
+    case "RESET_TOOL":
+      return {
         ...state,
-        wps: [...state.wps,action.w1],
+        wps: [...state.wps, action.w1],
         tool: [],
-        head:[] ,
+        head: [],
         handle: [],
         extra: [],
-    }
+      };
     default:
-      throw new Error(`Unknown action: ${action.type}`)
+      throw new Error(`Unknown action: ${action.type}`);
   }
-}
+};
 
 const initialState = {
   extra: [],
   head: [],
   handle: [],
-  wps:[],
-  dmg:0,
-  dura:0,
-  tool:[],
-}
+  wps: [],
+  dmg: 0,
+  dura: 0,
+  tool: [],
+};
 
 export const CounterProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(reducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <CounterDispatchContext.Provider value={dispatch}>
-      <CounterStateContext.Provider value={state}>
+    <CounterStateContext.Provider value={state}>
+      <CounterDispatchContext.Provider value={dispatch}>
         {children}
-      </CounterStateContext.Provider>
-    </CounterDispatchContext.Provider>
-  )
-}
+      </CounterDispatchContext.Provider>
+    </CounterStateContext.Provider>
+  );
+};
 
-export const useCount = () => useContext(CounterStateContext)
-export const useDispatchCount = () => useContext(CounterDispatchContext)
+export const useCount = () => useContext(CounterStateContext);
+export const useDispatchCount = () => useContext(CounterDispatchContext);
